@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;   
+    font-family: "Poppins", sans-serif;
+
+}
+/* Navigation BAR */
+header{
+    width:100%;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg,black,transparent);
+    position:fixed;
+    top:0;
+    z-index:10;
+    animation: drag 1.5s ease-in-out reverse forwards;
+
+
+}
+
+header ul{
+    width:65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 30px;
+
+    
+    
+}
+header ul li{
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+header ul li a{
+    text-decoration: none;
+    color:aliceblue;
+}
+header img{
+    width:150px;
+}
+header .logo-right{
+    width:100px;
+    position: relative;
+    bottom:10px;
+}
+/* home 
+*/
+.text{
+    width:550px;
+    position:absolute;
+    top:320px;
+    left:150px;
+    z-index:100;
+    color:aliceblue;
+    animation: drag 1s ease-in-out forwards;
+    opacity: 0;
+
+    span{
+        font-size:70px;
+    }
+    
+    a{
+        color:aliceblue;
+        font-size:1.6rem;
+    }
+}
+@keyframes drag{
+    to{
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+}
+
+.fold{
+    width:100%;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    position: relative;
+    bottom: 30px;
+ 
+}
+
+
+.fold-text{
+    width: 100%;
+    height:450px;
+    border-radius: 20px;
+    display: flex;
+    color:aliceblue;
+    overflow-x:hidden;
+    
+    h2{
+        font-size: 20px;    
+    }
+    
+    a{
+        /* text-decoration: none; */
+        color:aliceblue;
+    }
+}
+
+
+.fold-text:nth-child(1){
+    h2{
+       position:absolute;
+       top:320px; 
+       left:20px;
+       font-size: 1.6rem;
+       /* z-index: 9; */
+       /* color:blue; */
+    }
+    a{
+        position:absolute;
+        top:350px; 
+        font-size: 1.4rem;
+        left:20px;
+        
+
+    }
+}
+
+.fold-text:nth-child(2){
+    h2{
+        position:absolute;
+        top:320px; 
+        font-size: 1.6rem;
+        left:420px;
+
+     }
+     a{
+         position:absolute;
+         top:350px; 
+         font-size: 1.4rem;
+         left:420px;
+
+     }
+}
+
+.fold-text:nth-child(3){
+    h2{
+        position:absolute;
+        top:320px; 
+        right:440px;
+        font-size: 1.6rem;
+
+
+     }
+     a{
+         position:absolute;
+         top:350px; 
+         right:645px;
+        font-size: 1.4rem;
+
+
+         /* left:780px; */
+
+     }
+}
+
+
+.fold-text:nth-child(4){
+    h2{
+        position:absolute;
+        top:320px; 
+        font-size: 1.6rem; 
+        right:35px;
+     }
+     a{
+         position:absolute;
+         top:350px; 
+         font-size: 1.4rem;
+         right:255px;
+
+     }
+}
+
+
+
